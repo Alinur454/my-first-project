@@ -1,0 +1,1141 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Navigation */
+.navbar {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo h1 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.hero-description {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.hero-quote {
+    background: rgba(255,255,255,0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #f39c12;
+}
+
+.hero-quote blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.portrait-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+/* Introduction Section */
+.introduction {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.introduction h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.intro-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.intro-card:hover {
+    transform: translateY(-5px);
+}
+
+.intro-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Quick Facts */
+.quick-facts {
+    padding: 4rem 0;
+    background: white;
+}
+
+.quick-facts h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.fact-item {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.fact-item:hover {
+    transform: translateY(-5px);
+}
+
+.fact-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.fact-item h4 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.fact-item p {
+    color: #666;
+}
+
+/* Featured Quote */
+.featured-quote {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.large-quote {
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured-quote cite {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Biography Timeline */
+.biography-content {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #2c3e50;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-date {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    min-width: 120px;
+    align-self: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex: 1;
+    margin: 0 2rem;
+}
+
+.timeline-content h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Personal Details */
+.personal-details {
+    padding: 4rem 0;
+    background: white;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.detail-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #3498db;
+}
+
+.detail-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Character Traits */
+.character-traits {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.traits-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.trait-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.trait-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+/* Works Overview */
+.works-overview {
+    padding: 3rem 0;
+    background: #f8f9fa;
+}
+
+.works-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    font-family: 'Playfair Display', serif;
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Original Works */
+.original-works {
+    padding: 4rem 0;
+    background: white;
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: #666;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.work-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    border-top: 4px solid #3498db;
+}
+
+.work-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.themes {
+    margin-top: 1rem;
+}
+
+.theme-tag {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    margin: 0.2rem;
+}
+
+/* Translations */
+.translations {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.translation-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 3rem;
+}
+
+.translation-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.translation-card h3 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 1rem;
+}
+
+.authors-list {
+    space-y: 1.5rem;
+}
+
+.author-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.author-item:last-child {
+    border-bottom: none;
+}
+
+.author-item h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+/* Musical Works */
+.musical-works {
+    padding: 4rem 0;
+    background: white;
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.music-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #e74c3c;
+}
+
+.music-card.featured {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.music-card.featured h3 {
+    color: white;
+}
+
+.music-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Literary Innovation */
+.literary-innovation {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.innovation-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.innovation-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid #f39c12;
+}
+
+.innovation-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Book of Words */
+.book-of-words {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.book-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.book-subtitle {
+    font-size: 1.3rem;
+    color: #666;
+    font-style: italic;
+}
+
+.book-description {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.book-description p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.book-themes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.theme-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-left: 4px solid #9b59b6;
+}
+
+.theme-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.theme-card blockquote {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-left: 3px solid #9b59b6;
+    margin-top: 1rem;
+    font-style: italic;
+    color: #666;
+}
+
+/* Philosophical Influences */
+.philosophical-influences {
+    padding: 4rem 0;
+    background: white;
+}
+
+.influences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.influence-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    border-top: 4px solid #27ae60;
+}
+
+.influence-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.influence-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.influence-card li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+    color: #666;
+}
+
+.influence-card li:before {
+    content: "✓";
+    color: #27ae60;
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+/* Social Philosophy */
+.social-philosophy {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.reform-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.reform-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.reform-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 0.5rem;
+}
+
+.philosophy-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.point {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 3px solid #e74c3c;
+}
+
+.point h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+/* Philosophical Legacy */
+.philosophical-legacy {
+    padding: 4rem 0;
+    background: white;
+}
+
+.legacy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.legacy-item {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    border-top: 4px solid #8e44ad;
+}
+
+.legacy-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Modern Honors */
+.modern-honors {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.honors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.honor-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.honor-card:hover {
+    transform: translateY(-5px);
+}
+
+.honor-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.honor-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Global Presence */
+.global-presence {
+    padding: 4rem 0;
+    background: white;
+}
+
+.global-content h3 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.city-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.city-item h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.city-item p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Cultural Impact */
+.cultural-impact {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.impact-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid #e67e22;
+}
+
+.impact-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Political Legacy */
+.political-legacy {
+    padding: 4rem 0;
+    background: white;
+}
+
+.political-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.influence-section {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.influence-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #2ecc71;
+    padding-bottom: 0.5rem;
+}
+
+.movement-details,
+.modern-influence {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.detail-item,
+.influence-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 3px solid #2ecc71;
+}
+
+.detail-item h4,
+.influence-item h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+/* Global Comparison */
+.global-comparison {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.comparison-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.comparison-intro p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.comparisons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.comparison-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-left: 4px solid #f39c12;
+}
+
+.comparison-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Continuing Relevance */
+.continuing-relevance {
+    padding: 4rem 0;
+    background: white;
+}
+
+.relevance-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.relevance-section {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    border-top: 4px solid #9b59b6;
+}
+
+.relevance-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Final Reflection */
+.final-reflection {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    text-align: center;
+}
+
+.reflection-content h2 {
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.reflection-text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    opacity: 0.95;
+}
+
+.final-quote {
+    max-width: 600px;
+    margin: 3rem auto 0;
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #f39c12;
+}
+
+.final-quote blockquote {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.final-quote cite {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    color: #bdc3c7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        flex-direction: column !important;
+        padding-left: 3rem;
+    }
+    
+    .timeline-date {
+        position: absolute;
+        left: -2rem;
+        top: 0;
+        min-width: 100px;
+        font-size: 1rem;
+    }
+    
+    .timeline-content {
+        margin: 0;
+        margin-top: 3rem;
+    }
+    
+    .works-stats,
+    .facts-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    .translation-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .works-stats,
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .intro-grid,
+    .works-grid,
+    .honors-grid,
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    footer {
+        display: none;
+    }
+    
+    .hero {
+        background: none !important;
+        color: black !important;
+    }
+    
+    .hero-text h1,
+    .page-header h1 {
+        color: black !important;
+    }
+    
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: black !important;
+    }
+    
+    .theme-card,
+    .work-card,
+    .honor-card,
+    .impact-card {
+        break-inside: avoid;
+        margin-bottom: 1rem;
+    }
+}
